@@ -1,5 +1,5 @@
 # javascript_tests
-JavaScript Tests and Learning behaviour.
+JavaScript Tests and Learning Behavior.
 
 # Authors
 - [@lcoutojunior](https://www.github.com/lcoutojunior)
