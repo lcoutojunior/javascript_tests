@@ -87,11 +87,40 @@ console.log(countries); //[ 'Russia', 'USA', 'China' ]
 //Returns position of last element found
 let text = 'Hello, world! Hello there!';
 console.log(text.lastIndexOf("Hello")); //14
-//Returns position of last element found, given a index
+//Returns position of last element found, until a index provided
 console.log(text.lastIndexOf("Hello", 12)); //0
+console.log(text.lastIndexOf("world", 12)); //7
 console.log(text.lastIndexOf("hello")); //-1
 
 //indexOf
 //Returns position of first element found
 let cities = ['New York', 'Los Angeles', 'Tokio', 'Los Angeles'];
 console.log(cities.indexOf('Los Angeles')); //1
+
+//slice
+//Copies for a new array given the interval (begin, stops)
+const diseases = ['Parkinson', 'Myopia', 'Caract','Malaria'];
+const eyesDiseases = diseases.slice(1,3); 
+console.log('diseases: ', diseases); //[ 'Parkinson', 'Myopia', 'Caract', 'Malaria' ]
+console.log('eyesDiseases: ', eyesDiseases); //[ 'Myopia', 'Caract' ] 
+const salutare = "Ciao! Buongiorno!";
+const ciao = salutare.slice(0,5);
+console.log(ciao); //Ciao!
+console.log(salutare); //Ciao! Buongiorno!
+
+//splice
+//array.splice(begins, qty, item1, item2...)
+//Modify array (add/remove) contents in exact index provided given quantity (index included)
+const tasks = ['Study', 'Buy bread', 'See doctor', 'Pay Bills', 'Feed pet'];
+//Removing two elements
+const removedTasks = tasks.splice(1,2);
+console.log('removedTasks: ', removedTasks); //[ 'Buy bread', 'See doctor' ]
+console.log('tasks: ', tasks); //[ 'Study', 'Pay Bills', 'Feed pet' ]
+//Adding two elements
+tasks.splice(2,0,'Clean Kitchen', 'Vaccum cleaner');
+console.log('tasks: ', tasks); [ 'Study', 'Pay Bills', 'Clean Kitchen', 'Vaccum cleaner', 'Feed pet' ]
+//Replace elements
+const guests = ['Ana', 'Carlos', 'Márcia', 'Paulo'];
+const substituteGuests = guests.splice(1, 2, 'Júlia', 'Ricardo');
+console.log('substitueGuest: ', substituteGuests);
+console.log('guests: ', guests);
