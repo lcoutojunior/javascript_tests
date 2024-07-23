@@ -99,10 +99,10 @@ console.log(cities.indexOf('Los Angeles')); //1
 
 //slice
 //Copies for a new array given the interval (begin, stops)
-const diseases = ['Parkinson', 'Myopia', 'Caract','Malaria'];
+const diseases = ['Parkinson', 'Myopia', 'Cataract','Malaria'];
 const eyesDiseases = diseases.slice(1,3); 
 console.log('diseases: ', diseases); //[ 'Parkinson', 'Myopia', 'Caract', 'Malaria' ]
-console.log('eyesDiseases: ', eyesDiseases); //[ 'Myopia', 'Caract' ] 
+console.log('eyesDiseases: ', eyesDiseases); //[ 'Myopia', 'Cataract' ] 
 const salutare = "Ciao! Buongiorno!";
 const ciao = salutare.slice(0,5);
 console.log(ciao); //Ciao!
@@ -124,3 +124,9 @@ const guests = ['Ana', 'Carlos', 'Márcia', 'Paulo'];
 const substituteGuests = guests.splice(1, 2, 'Júlia', 'Ricardo');
 console.log('substitueGuest: ', substituteGuests);
 console.log('guests: ', guests);
+
+//++i; pre-increment operator. It first increments the value of i by 1 and then returns the incremented value. 
+//i++; post-increment operator. It first returns the current value of i and then increments it by 1.
+let i = 3;
+let a = ++i; // a will be 4, i will be 4
+let b = i++; // b will be 4 (the value of i before incrementing), i will be 5
